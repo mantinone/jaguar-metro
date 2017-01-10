@@ -4,24 +4,35 @@
   "description": "Dependent-Jaguar, MetroRail: Data Modeling & Database Design (LG Goal 126)",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "//": "npm:" "run test: // run all tests",
-    "//": "npm:" "run repl: open a REPL session with all your library code loaded",
-    "//": "npm:" "run db:create: create the database for the current NODE_ENV",
-    "//": "npm:" "run db:migrate: run all schema migrations for the database",
-    "//": "npm:" "run db:seed: insert seed (sample) data into the database",
-    "//": "npm:" "run db:drop: delete the database for the current NODE_ENV",
-    "//": "npm:" "run db:reset: drop, create, and migrate the database",
-    "//": "npm:" "run db:console: open a console session for running queries against the databas"
+    "test": "mocha --watch dist/spec",
+    "repl": "TODO, terminal code to run REPL",
+    "db:create": "TODO, terminal code that creates database",
+    "db:migrate": "TODO, terminal code to migrate db",
+    "db:seed": "TODO, terminal code to run seed file",
+    "db:drop": "TODO, terminal code to drop db",
+    "db:reset": "TODO, terminal code to drop and create db (and run seed file?)",
+    "db:console": "TODO, terminal code to open a database query console"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mantinone/jaguar-metro.git"
   },
-  "author": ["Maurice Caviness <Compsight@aol.com>", "Max"],
+  "author": [
+    "Maurice Caviness <Compsight@aol.com>",
+    "Max Antinone <mantinone@gmail.com"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mantinone/jaguar-metro/issues"
   },
-  "homepage": "https://github.com/mantinone/jaguar-metro#readme"
+  "homepage": "https://github.com/mantinone/jaguar-metro#readme",
+  "dependencies": {
+    "bookshelf": "^0.10.2",
+    "knex": "^0.12.6",
+    "pgpromise": "^0.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
 }
