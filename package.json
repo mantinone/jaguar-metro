@@ -1,0 +1,27 @@
+{
+  "name": "jaguar-metro",
+  "version": "1.0.0",
+  "description": "Dependent-Jaguar, MetroRail: Data Modeling & Database Design (LG Goal 126)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "//": "npm:" "run test: // run all tests",
+    "//": "npm:" "run repl: open a REPL session with all your library code loaded",
+    "//": "npm:" "run db:create: create the database for the current NODE_ENV",
+    "//": "npm:" "run db:migrate: run all schema migrations for the database",
+    "//": "npm:" "run db:seed: insert seed (sample) data into the database",
+    "//": "npm:" "run db:drop: delete the database for the current NODE_ENV",
+    "//": "npm:" "run db:reset: drop, create, and migrate the database",
+    "//": "npm:" "run db:console: open a console session for running queries against the databas"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mantinone/jaguar-metro.git"
+  },
+  "author": ["Maurice Caviness <Compsight@aol.com>", "Max"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mantinone/jaguar-metro/issues"
+  },
+  "homepage": "https://github.com/mantinone/jaguar-metro#readme"
+}
