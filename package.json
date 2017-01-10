@@ -6,11 +6,13 @@
   "scripts": {
     "test": "mocha --watch dist/spec",
     "repl": "TODO, terminal code to run REPL",
-    "db:create": "TODO, terminal code that creates database",
+    "db:start": "postgres -D /usr/local/var/postgres",
+    "db:create": "createdb jaguar-metro",
+    "db:loadschema": "psql jaguar-metro < ./database/schema.sql",
     "db:migrate": "TODO, terminal code to migrate db",
-    "db:seed": "TODO, terminal code to run seed file",
-    "db:drop": "TODO, terminal code to drop db",
-    "db:reset": "TODO, terminal code to drop and create db (and run seed file?)",
+    "db:seed": "psql jaguar-metro < ",
+    "db:drop": "dropdb jaguar-metro",
+    "db:reset": "npm run db:drop && npm run db:create && npm run db:loadschema",
     "db:console": "TODO, terminal code to open a database query console"
   },
   "repository": {
@@ -19,7 +21,7 @@
   },
   "author": [
     "Maurice Caviness <Compsight@aol.com>",
-    "Max Antinone <mantinone@gmail.com"
+    "Max Antinone <mantinone@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
@@ -29,7 +31,7 @@
   "dependencies": {
     "bookshelf": "^0.10.2",
     "knex": "^0.12.6",
-    "pgpromise": "^0.1.1"
+    "pg": "^6.1.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
