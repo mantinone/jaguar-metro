@@ -59,13 +59,16 @@
 <part>id</part>
 </key>
 </table>
-<table x="106" y="220" name="STATION">
-<row name="id" null="0" autoincrement="0">
+<table x="106" y="190" name="STATION">
+<row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="Name" null="0" autoincrement="0">
 <datatype>VARCHAR(50)</datatype>
 </row>
+<row name="Order" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>id</part>
 </key>
@@ -91,11 +94,11 @@
 <row name="Departed" null="0" autoincrement="0">
 <datatype>TIMESTAMP</datatype>
 </row>
-<row name="STATION.id" null="0" autoincrement="0">
+<row name="STATION_id" null="0" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="STATION" row="id" />
 </row>
-<row name="TRAIN.id" null="1" autoincrement="0">
+<row name="TRAIN_id" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="TRAIN" row="id" />
 </row>
@@ -107,7 +110,7 @@
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="TRAIN" row="id" />
 </row>
-<row name="PASSENGER.id" null="1" autoincrement="0">
+<row name="PASSENGER_id" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="PASSENGER" row="id" />
 </row>
@@ -124,11 +127,11 @@
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="STATION.id" null="0" autoincrement="0">
+<row name="STATION_id" null="0" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="STATION" row="id" />
 </row>
-<row name="PASSENGER.id" null="1" autoincrement="0">
+<row name="PASSENGER_id" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="PASSENGER" row="id" />
 </row>
@@ -146,11 +149,11 @@
 <row name="UseDate" null="0" autoincrement="0">
 <datatype>TIMESTAMP</datatype>
 </row>
-<row name="STATION.id" null="0" autoincrement="0">
+<row name="STATION_id" null="0" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="STATION" row="id" />
 </row>
-<row name="PASSENGER.id" null="1" autoincrement="0">
+<row name="PASSENGER_id" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="PASSENGER" row="id" />
 </row>
