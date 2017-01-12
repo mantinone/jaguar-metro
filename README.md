@@ -84,13 +84,13 @@ _List of specifications (specs) for the completed goal. These are declarative se
 
 Expose the following commands (and more, if you need) using the `scripts` property of your `package.json`.
 
-- [ ] `$ npm run test`: run all tests.
+- [x] `$ npm run test`: run all tests.
 - [ ] `$ npm run repl`: open a REPL session with all your library code loaded.
-- [ ] `$ npm run db:create`: create the database for the current `NODE_ENV`.
+- [x] `$ npm run db:create`: create the database for the current `NODE_ENV`.
 - [ ] `$ npm run db:migrate`: run all schema migrations for the database.
-- [ ] `$ npm run db:seed`: insert seed (sample) data into the database.
-- [ ] `$ npm run db:drop`: delete the database for the current `NODE_ENV`.
-- [ ] `$ npm run db:reset`: drop, create, and migrate the database.
+- [x] `$ npm run db:seed`: insert seed (sample) data into the database.
+- [x] `$ npm run db:drop`: delete the database for the current `NODE_ENV`.
+- [x] `$ npm run db:reset`: drop, create, and migrate the database.
 - [ ] `$ npm run db:console`: open a console session for running queries against the database.
 
 #### User Stories
