@@ -23,20 +23,19 @@ const retrieveRecord = ( model ) => {
 }
 
 const getPassenger = ( data ) => {
-  return retrieveRecord( Passenger.forge(data) )
-    .then(result => result )
+  return retrieveRecord( Passenger.forge(data) ).then(result => result )
 }
 
 const getStation = (data) => {
-  return retrieveRecord( Station.forge(data) )
+  return retrieveRecord( Station.forge(data) ).then(result => result )
 }
 
 const getTrain = (data) => {
-  return retrieveRecord( Train.forge(data) )
+  return retrieveRecord( Train.forge(data) ).then(result => result )
 }
 
 const getTicket = (data) => {
-  return retrieveRecord( Ticket.forge(data) )
+  return retrieveRecord( Ticket.forge(data) ).then(result => result )
 }
 
 module.exports = {

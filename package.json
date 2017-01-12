@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha",
-    "repl": "TODO, terminal code to run REPL",
+    "repl": "node ./src/repl.js",
     "db:start": "postgres -D /usr/local/var/postgres",
     "db:create": "createdb jaguar-metro",
     "db:loadschema": "psql jaguar-metro < ./database/schema.sql",
