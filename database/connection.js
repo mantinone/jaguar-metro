@@ -56,6 +56,6 @@ const TrainAndPassenger = bookshelf.Model.extend({
   passenger: () => this.belongsTo(Passenger, ['PASSENGER.id'])
 })
 
-console.log("COMPLETE")
+console.log("Connection Ran")
 
-module.exports = bookshelf
+module.exports = { bookshelf, Train, Passenger, Station, Ticket, StationAndTrain, StationAndPassenger, TrainAndPassenger }

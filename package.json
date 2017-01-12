@@ -4,7 +4,7 @@
   "description": "Dependent-Jaguar, MetroRail: Data Modeling & Database Design (LG Goal 126)",
   "main": "app.js",
   "scripts": {
-    "test": "mocha --watch dist/spec",
+    "test": "mocha",
     "repl": "TODO, terminal code to run REPL",
     "db:start": "postgres -D /usr/local/var/postgres",
     "db:create": "createdb jaguar-metro",
