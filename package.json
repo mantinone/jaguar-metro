@@ -10,9 +10,9 @@
     "db:create": "createdb jaguar-metro",
     "db:loadschema": "psql jaguar-metro < ./database/schema.sql",
     "db:migrate": "TODO, terminal code to migrate db",
-    "db:seed": "psql jaguar-metro < ",
+    "db:seed": "node ./database/seed.js",
     "db:drop": "dropdb jaguar-metro",
-    "db:reset": "npm run db:drop && npm run db:create && npm run db:loadschema",
+    "db:reset": "npm run db:drop && npm run db:create && npm run db:loadschema && npm run db:seed",
     "db:console": "TODO, terminal code to open a database query console"
   },
   "repository": {
