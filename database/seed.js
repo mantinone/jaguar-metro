@@ -31,14 +31,14 @@ const buildStationsAndStuff = () => {
     {Order: 14, Name: 'Monument Valley'},
     {Order: 18, Name: 'Museum Isle'}
   ]).invokeThen('save')
-  .then( result => {
-    console.log('Added records for Stations')
-    buildTrains()
-  })
-  .catch(function (err) {
-    console.error('Error Saving Record');
-    console.error(err);
-  });
+    .then( result => {
+      console.log('Added records for Stations')
+      buildTrains()
+    })
+    .catch(function (err) {
+      console.error('Error Saving Record');
+      console.error(err);
+    });
 }
 
 const buildTrains = () => {
@@ -49,14 +49,14 @@ const buildTrains = () => {
     {Capacity: 110, NumOnboard: 0, LastStation: 6},
     {Capacity: 50, NumOnboard: 0, LastStation: 9}
   ]).invokeThen('save')
-  .then( result => {
-    console.log('Added records for Trains')
-    buildStationsAndTrains()
-  })
-  .catch(function (err) {
-    console.error('Error Saving Record');
-    console.error(err);
-  });
+    .then( result => {
+      console.log('Added records for Trains')
+      buildStationsAndTrains()
+    })
+    .catch(function (err) {
+      console.error('Error Saving Record');
+      console.error(err);
+    });
 }
 
 const buildStationsAndTrains = () => {
@@ -67,14 +67,14 @@ const buildStationsAndTrains = () => {
     {Arrived: '2017-1-16 12:21:13 ', 'TRAIN_id': 3, 'STATION_id': 6},
     {Arrived: '2017-1-16 12:21:13 ', 'TRAIN_id': 4, 'STATION_id': 9}
   ]).invokeThen('save')
-  .then( result => {
-    console.log('Added join table records')
-    bookshelf.knex.destroy()
-  })
-  .catch(function (err) {
-    console.error('Error Saving Record');
-    console.error(err);
-  });
+    .then( result => {
+      console.log('Added join table records')
+      bookshelf.knex.destroy()
+    })
+    .catch(function (err) {
+      console.error('Error Saving Record');
+      console.error(err);
+    });
 }
 
 const buildPassengers = () => {
@@ -87,13 +87,13 @@ const buildPassengers = () => {
     {FirstName: 'Jules', LastName: 'Verne'},
     {FirstName: 'Laura', LastName: 'Chapman'}
   ]).invokeThen('save')
-  .then( result => {
-    console.log('Added records for passengers')
-  })
-  .catch(function (err) {
-    console.error('Error Saving Record');
-    console.error(err);
-  });
+    .then( result => {
+      console.log('Added records for passengers')
+    })
+    .catch(function (err) {
+      console.error('Error Saving Record');
+      console.error(err);
+    });
 }
 
 const buildSeed = () => {
