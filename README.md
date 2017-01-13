@@ -98,7 +98,7 @@ Expose the following commands (and more, if you need) using the `scripts` proper
 Create models with interfaces to satisfy the following user stories, assuming the "user" in this case is a programmer using your data model.
 
 - [ ] As a user of the `Train` model, I can...
-  - [ ] get the number of a particular train.
+  - [x] get the number of a particular train.
   - [ ] get the capacity for passengers of a particular train.
   - [ ] get the passengers of a particular train.
   - [ ] determine whether a particular train is full (at capacity) or not.
@@ -116,8 +116,8 @@ Create models with interfaces to satisfy the following user stories, assuming th
 - [ ] As a user of the `Train` model, I receive appropriate and descriptive errors.
 - [ ] As a user of the `Station` model, I can run unit tests that exercise the specs for every public property, instance method, and class method.
 - [ ] As a user of the `Station` model, I can...
-  - [ ] get the ID of a particular station.
-  - [ ] get the location of a particular station.
+  - [x] get the ID of a particular station.
+  - [x] get the location of a particular station.
   - [ ] get the passengers waiting for a train at a particular station.
   - [ ] get the passengers who have tickets at a particular station.
   - [ ] get the previous station on the line for a particular station.
@@ -132,8 +132,8 @@ Create models with interfaces to satisfy the following user stories, assuming th
 - [ ] As a user of the `Station` model, I receive appropriate and descriptive errors.
 - [ ] As a user of the `Station` model, I can run unit tests that exercise the specs for every public property, instance method, and class method.
 - [ ] As a user of the `Passenger` model, I can...
-  - [ ] get the ID of a particular passenger.
-  - [ ] get the name of a particular passenger.
+  - [x] get the ID of a particular passenger.
+  - [x] get the name of a particular passenger.
   - [ ] get a particular passenger's ticket.
   - [ ] set the current station of a particular passenger.
   - [ ] buy a ticket for a particular passenger from their current station to another specified station.
@@ -155,7 +155,7 @@ Create models with interfaces to satisfy the following user stories, assuming th
 
 _Do not remove these specs - they are required for all goals_.
 
-- [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
+- [x] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ### Stretch
 
