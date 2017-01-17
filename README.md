@@ -108,7 +108,7 @@ Create models with interfaces to satisfy the following user stories, assuming th
   - [ ] move a train to its next station.
   - [ ] offboard passengers whose destination is a train's current station.
   - [ ] onboard passengers of a train at the current station.
-  - [ ] find a train by its number.
+  - [x] find a train by its number.
   - [ ] create a new train.
   - [ ] save new trains to the database.
   - [ ] update existing trains in the database.
@@ -123,8 +123,8 @@ Create models with interfaces to satisfy the following user stories, assuming th
   - [ ] get the previous station on the line for a particular station.
   - [ ] get the next station on the line for a particular station.
   - [ ] determine which is the next train arriving at a particular station.
-  - [ ] find a station by its ID.
-  - [ ] find a station by its location.
+  - [x] find a station by its ID.
+  - [x] find a station by its location.
   - [ ] create a new station.
   - [ ] save new stations to the database.
   - [ ] update existing stations in the database.
@@ -140,8 +140,8 @@ Create models with interfaces to satisfy the following user stories, assuming th
   - [ ] use a ticket for a particular passenger.
   - [ ] determine the current train for a particular passenger.
   - [ ] determine the current station for a particular passenger.
-  - [ ] find a passenger by their ID.
-  - [ ] find a passenger by their name.
+  - [x] find a passenger by their ID.
+  - [x] find a passenger by their name.
   - [ ] find all passengers at a station.
   - [ ] find all passengers on a train.
   - [ ] create a new passenger.
